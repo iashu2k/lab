@@ -1,6 +1,16 @@
 // Program to request server
 // information viz Request Method, URL, Protocol
 // and remote address.
+/*
+systemctl start tomcat9
+javac -classpath "/usr/share/tomcat9/lib/servlet-api.jar" ServerInfo.java
+sudo cp ServerInfo.class /usr/share/tomcat9-examples/examples/WEB-INF/classes
+cd /usr/share/tomcat9-examples/examples/WEB-INF/
+sudo gedit web.xml
+servelet
+servlet-mapping
+http://localhost:8080/examples/servlets/servlet/ServerInfo
+*/
 
 import javax.servlet.*;
 import java.io.*;
